@@ -1,0 +1,101 @@
+@startuml
+class sistemaGarage.GarageTest {
+}
+class vehiculos.Auto {
+- String marca
+- int numeroDePuertas
+- String patente
++ <<Create>> Auto(String,int,int,boolean,double,Contacto,String,int,String)
++ String getMarca()
++ void setMarca(String)
++ int getNumeroDePuertas()
++ void setNumeroDePuertas(int)
++ String getPatente()
++ void setPatente(String)
++ String toString()
+}
+class sistemaGarage.Garage {
+- int horaApertura
+- int horaCierre
+- String direccion
+- int capacidadMaxima
+- int precioCambioRuedaDeAuto
+- int PrecioCambioRuedaDeMoto
+- Vehiculo precioTotalEnCambioDeRueda
+- Vehiculo kilometrajeEnTotal
+- Vehiculo totalVehiculosRecibidos
++ <<Create>> Garage(int,int,String,int,int,int)
++ <<Create>> Garage(int,int,String,int,int,int,Vehiculo,Vehiculo,Vehiculo)
++ int getHoraApertura()
++ void setHoraApertura(int)
++ int getHoraCierre()
++ void setHoraCierre(int)
++ String getDireccion()
++ void setDireccion(String)
++ int getCapacidadMaxima()
++ void setCapacidadMaxima(int)
++ int getPrecioCambioRuedaDeAuto()
++ void setPrecioCambioRuedaDeAuto(int)
++ int getPrecioCambioRuedaDeMoto()
++ void setPrecioCambioRuedaDeMoto(int)
++ Vehiculo getPrecioTotalEnCambioDeRueda()
++ void setPrecioTotalEnCambioDeRueda(Vehiculo)
++ Vehiculo getKilometrajeEnTotal()
++ void setKilometrajeEnTotal(Vehiculo)
++ Vehiculo getTotalVehiculosRecibidos()
++ void setTotalVehiculosRecibidos(Vehiculo)
++ String toString()
+}
+class vehiculos.Contacto {
+- String nombre
+- String apellido
+- int numeroCelular
++ <<Create>> Contacto(String,String,int)
++ String getNombre()
++ void setNombre(String)
++ String getApellido()
++ void setApellido(String)
++ int getNumeroCelular()
++ void setNumeroCelular(int)
++ String toString()
+}
+class vehiculos.Moto {
+- String marca
+- double cilindrada
+- String patente
++ <<Create>> Moto(String,int,int,boolean,double,Contacto,String,double,String)
++ String getMarca()
++ void setMarca(String)
++ double getCilindrada()
++ void setCilindrada(double)
++ String getPatente()
++ void setPatente(String)
++ String toString()
+}
+class vehiculos.Vehiculo {
+- String tipoDeVehiculo
+- int horaIngreso
+- int horaRetirada
+- boolean cambiarRueda
+- double kilometraje
+- Contacto datosDelDueño
++ <<Create>> Vehiculo(String,int,int,boolean,double,Contacto)
++ String getTipoDeVehiculo()
++ void setTipoDeVehiculo(String)
++ int getHoraIngreso()
++ void setHoraIngreso(int)
++ int getHoraRetirada()
++ void setHoraRetirada(int)
++ boolean isCambiarRueda()
++ void setCambiarRueda(boolean)
++ double getKilometraje()
++ void setKilometraje(double)
++ Contacto getDatosDelDueño()
++ void setDatosDelDueño(Contacto)
++ String toString()
+}
+
+
+vehiculos.Vehiculo <|-- vehiculos.Auto
+vehiculos.Vehiculo <|-- vehiculos.Moto
+@enduml

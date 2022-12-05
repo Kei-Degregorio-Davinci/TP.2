@@ -5,7 +5,8 @@ public class Moto extends Vehiculo {
     private double cilindrada;
     private String patente;
 
-    public Moto(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje, Contacto datosDelDueño, String marca, double cilindrada, String patente) {
+      public Moto(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda,
+                double kilometraje, Contacto datosDelDueño, String marca, double cilindrada, String patente) {
         super(tipoDeVehiculo, horaIngreso, horaRetirada, cambiarRueda, kilometraje, datosDelDueño);
         this.marca = marca;
         this.cilindrada = cilindrada;

@@ -8,13 +8,13 @@ public class Vehiculo {
     private double kilometraje;
     private Contacto datosDelDueño;
 
-    public Vehiculo(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje, Contacto datosDelDueño) {
+    public Vehiculo(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje) {
         this.tipoDeVehiculo = tipoDeVehiculo;
         this.horaIngreso = horaIngreso;
         this.horaRetirada = horaRetirada;
         this.cambiarRueda = cambiarRueda;
         this.kilometraje = kilometraje;
-        this.datosDelDueño = datosDelDueño;
+
     }
 
     public String getTipoDeVehiculo() {

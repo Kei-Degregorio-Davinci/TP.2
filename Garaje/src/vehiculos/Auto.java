@@ -5,8 +5,9 @@ public class Auto extends Vehiculo{
     private int numeroDePuertas;
     private String patente;
 
-    public Auto(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje, Contacto datosDelDueño, String marca, int numeroDePuertas, String patente) {
-        super(tipoDeVehiculo, horaIngreso, horaRetirada, cambiarRueda, kilometraje, datosDelDueño);
+    public Auto(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje,
+                 String marca, int numeroDePuertas, String patente) {
+        super(tipoDeVehiculo, horaIngreso, horaRetirada, cambiarRueda, kilometraje);
         this.marca = marca;
         this.numeroDePuertas = numeroDePuertas;
         this.patente = patente;

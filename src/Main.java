@@ -1,3 +1,8 @@
+import sistemaGarage.Garage;
+import vehiculos.Contacto;
+import vehiculos.Moto;
+import vehiculos.Vehiculo;
+
 import java.util.Date;
 
 public class Main {
@@ -87,6 +92,13 @@ public class Main {
         Llave cuartos= new Llave("Cuartos de Final");
         Llave semi= new Llave("Semifinal");
         Llave finalDelTorneo= new Llave("Final del torneo");
+
+
+        Garage garage1= new Garage(8, 12, "Sarmiento 125", 100, 200,100);
+        Vehiculo v1 = new Vehiculo("Moto", 9, 10,true, 85);
+        Contacto c1 = new Contacto("Juan Cruz", "Fernandez", 123456788);
+
+
     }
 
 }
