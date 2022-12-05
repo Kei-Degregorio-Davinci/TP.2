@@ -4,13 +4,9 @@ abstract class EtapaMundial {
 - ArrayList<Partido> partidos
 - ArrayList<Equipo> equipoQueAvanza
 + <<Create>> EtapaMundial()
-+ <<Create>> EtapaMundial(String,ArrayList<Partido>,ArrayList<Equipo>)
 + String getDescripcionEtapa()
-+ void setDescripcionEtapa(String)
 # ArrayList<Partido> getPartidos()
-+ void setPartidos(ArrayList<Partido>)
 + ArrayList<Equipo> getEquipoQueAvanza()
-+ void setEquipoQueAvanza(ArrayList<Equipo>)
 + void addPartido(Partido)
 + void addEquipoQueAvanza(Equipo)
 + String toString()
@@ -20,11 +16,8 @@ class Resultado {
 - int golesVisitante
 + <<Create>> Resultado(int,int)
 + int getGolesLocal()
-+ void setGolesLocal(int)
 + int getGolesVisitante()
-+ void setGolesVisitante(int)
 + boolean ganoLocal()
-+ boolean ganoVisitante()
 + boolean empate()
 + String toString()
 }
@@ -36,8 +29,6 @@ class Equipo {
 + <<Create>> Equipo(String,ArrayList<Partido>)
 + String getNombre()
 + void setNombre(String)
-+ ArrayList<Partido> getPartidosJugados()
-+ void setPartidosJugados(ArrayList<Partido>)
 + int getPuntajeEtapaGrupos()
 + void setPuntajeEtapaGrupos(int)
 + void addPartidosJugados(Partido)
@@ -46,9 +37,6 @@ class Equipo {
 + String toString()
 }
 class Grupo {
-- ArrayList<Equipo> equipoQueAvanza
-+ <<Create>> Grupo()
-+ <<Create>> Grupo(ArrayList<Equipo>)
 + ArrayList<Equipo> getEquipoQueAvanza()
 }
 class Partido {
@@ -57,19 +45,13 @@ class Partido {
 - Equipo visitante
 - Resultado resultado
 + <<Create>> Partido(Date,Equipo,Equipo)
-+ Date getFecha()
-+ void setFecha(Date)
 + Equipo getLocal()
-+ void setLocal(Equipo)
 + Equipo getVisitante()
-+ void setVisitante(Equipo)
 + Resultado getResultado()
-+ void setResultado(Resultado)
 + String toString()
 }
 class Llave {
 - String nombre
-- ArrayList<Equipo> equipoQueAvanza
 + <<Create>> Llave(String)
 + ArrayList<Equipo> getEquipoQueAvanza()
 }
