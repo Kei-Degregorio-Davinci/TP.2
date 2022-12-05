@@ -94,6 +94,8 @@ public class Main {
         Llave finalDelTorneo= new Llave("Final del torneo");
 
 
+        //Garage
+
         Garage garage1= new Garage(8, 12, "Sarmiento 125", 100, 200,100);
         Vehiculo v1 = new Vehiculo("Moto", 9, 10,true, 85);
         Contacto c1 = new Contacto("Juan Cruz", "Fernandez", 123456788);
