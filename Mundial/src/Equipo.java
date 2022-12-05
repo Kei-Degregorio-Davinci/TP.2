@@ -25,14 +25,6 @@ public class Equipo {
         this.nombre = nombre;
     }
 
-    public ArrayList<Partido> getPartidosJugados() {
-        return partidosJugados;
-    }
-
-    public void setPartidosJugados(ArrayList<Partido> partidosJugados) {
-        this.partidosJugados = partidosJugados;
-    }
-
     public int getPuntajeEtapaGrupos() {
         return puntajeEtapaGrupos;
     }

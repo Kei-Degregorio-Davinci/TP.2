@@ -11,34 +11,18 @@ public abstract class EtapaMundial {
         this.equipoQueAvanza= new ArrayList<Equipo>();
     }
 
-    public EtapaMundial(String descripcionEtapa, ArrayList<Partido> partidos, ArrayList<Equipo> equipoQueAvanza) {
-        this.descripcionEtapa = descripcionEtapa;
-        this.partidos = partidos;
-        this.equipoQueAvanza = equipoQueAvanza;
-    }
-
     public String getDescripcionEtapa() {
         return descripcionEtapa;
     }
 
-    public void setDescripcionEtapa(String descripcionEtapa) {
-        this.descripcionEtapa = descripcionEtapa;
-    }
 
     protected ArrayList<Partido> getPartidos() {
         return partidos;
     }
 
-    public void setPartidos(ArrayList<Partido> partidos) {
-        this.partidos = partidos;
-    }
 
     public ArrayList<Equipo> getEquipoQueAvanza() {
         return equipoQueAvanza;
-    }
-
-    public void setEquipoQueAvanza(ArrayList<Equipo> equipoQueAvanza) {
-        this.equipoQueAvanza = equipoQueAvanza;
     }
 
     public void addPartido(Partido partido){

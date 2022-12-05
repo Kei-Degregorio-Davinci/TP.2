@@ -11,28 +11,12 @@ public class Resultado {
         return golesLocal;
     }
 
-    public void setGolesLocal(int golesLocal) {
-        this.golesLocal = golesLocal;
-    }
-
     public int getGolesVisitante() {
         return golesVisitante;
     }
 
-    public void setGolesVisitante(int golesVisitante) {
-        this.golesVisitante = golesVisitante;
-    }
-
     public boolean ganoLocal() {
         if (this.golesLocal>this.golesVisitante){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public boolean ganoVisitante(){
-        if (this.golesVisitante>this.golesLocal){
             return true;
         } else {
             return false;
