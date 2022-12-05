@@ -1,4 +1,47 @@
 package vehiculos;
 
-public class Auto {
+public class Auto extends Vehiculo{
+    private String marca;
+    private int numeroDePuertas;
+    private String patente;
+
+    public Auto(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje, Contacto datosDelDueño, String marca, int numeroDePuertas, String patente) {
+        super(tipoDeVehiculo, horaIngreso, horaRetirada, cambiarRueda, kilometraje, datosDelDueño);
+        this.marca = marca;
+        this.numeroDePuertas = numeroDePuertas;
+        this.patente = patente;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getNumeroDePuertas() {
+        return numeroDePuertas;
+    }
+
+    public void setNumeroDePuertas(int numeroDePuertas) {
+        this.numeroDePuertas = numeroDePuertas;
+    }
+
+    public String getPatente() {
+        return patente;
+    }
+
+    public void setPatente(String patente) {
+        this.patente = patente;
+    }
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "marca='" + marca + '\'' +
+                ", numeroDePuertas=" + numeroDePuertas +
+                ", patente='" + patente + '\'' +
+                '}';
+    }
 }
