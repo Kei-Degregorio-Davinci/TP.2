@@ -1,5 +1,3 @@
-package torneo;
-
 import java.util.Date;
 
 
@@ -52,7 +50,6 @@ public class Partido {
                 "fecha=" + fecha +
                 ", local=" + local +
                 ", visitante=" + visitante +
-                ", resultado=" + resultado +
-                '}';
+                                '}';
     }
 }

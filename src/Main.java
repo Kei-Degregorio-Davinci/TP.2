@@ -1,11 +1,8 @@
 import sistemaGarage.Garage;
-import torneo.*;
 import vehiculos.Auto;
 import vehiculos.Contacto;
 import vehiculos.Moto;
 import vehiculos.Vehiculo;
-import torneo.Resultado;
-
 
 import java.util.Date;
 
@@ -73,14 +70,14 @@ public class Main {
         Partido p8= new Partido(new Date(2022,12,06), portugal, suiza);
 
         System.out.println("Partidos del torneo.Octavos");
-        System.out.println("torneo.Partido:" + p1);
-        System.out.println("torneo.Partido:" + p2 );
-        System.out.println("torneo.Partido:" + p3 );
-        System.out.println("torneo.Partido:" + p4 );
-        System.out.println("torneo.Partido:" + p5 );
-        System.out.println("torneo.Partido:" + p6 );
-        System.out.println("torneo.Partido:" + p7 );
-        System.out.println("torneo.Partido:" + p8 );
+        System.out.println("Partido:" + p1);
+        System.out.println("Partido:" + p2 );
+        System.out.println("Partido:" + p3 );
+        System.out.println("Partido:" + p4 );
+        System.out.println("Partido:" + p5 );
+        System.out.println("Partido:" + p6 );
+        System.out.println("Partido:" + p7 );
+        System.out.println("Partido:" + p8 );
 
         Resultado rp1= new Resultado(3,1);
         Resultado rp2= new Resultado(2,1);
@@ -178,10 +175,10 @@ public class Main {
         Partido p12= new Partido(new Date(2022,12,10), inglaterra, francia);
 
         System.out.println("Partidos del torneo.Cuartos");
-        System.out.println("torneo.Partido:" + p9);
-        System.out.println("torneo.Partido:" + p10);
-        System.out.println("torneo.Partido:" + p11);
-        System.out.println("torneo.Partido:" + p12);
+        System.out.println("Partido:" + p9);
+        System.out.println("Partido:" + p10);
+        System.out.println("Partido:" + p11);
+        System.out.println("Partido:" + p12);
 
         Resultado rp9= new Resultado(4,2);
         Resultado rp10= new Resultado(3,4);
@@ -233,8 +230,8 @@ public class Main {
         Partido p14= new Partido(new Date(2022,12,14), francia,marruecos);
 
         System.out.println("Partidos del torneo.SemiFinal");
-        System.out.println("torneo.Partido:" + p13);
-        System.out.println("torneo.Partido:" + p14);
+        System.out.println("Partido:" + p13);
+        System.out.println("Partido:" + p14);
 
         Resultado rp13= new Resultado(3,0);
         Resultado rp14= new Resultado(2,0);
@@ -267,7 +264,7 @@ public class Main {
         Partido p15= new Partido(new Date(2022,12,18), argentina,francia);
 
         System.out.println("Partidos del torneo.Final");
-        System.out.println("torneo.Partido:" + p15);
+        System.out.println("Partido:" + p15);
 
         Resultado rp15= new Resultado(4,2);
 
@@ -347,7 +344,7 @@ public class Main {
         System.out.println("Cantidad de puertas:" + a1.getNumeroDePuertas());
         System.out.println("Patente: " + a1.getPatente());
 
-      
+
 
 
 

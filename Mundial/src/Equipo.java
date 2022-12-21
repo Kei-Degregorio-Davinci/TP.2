@@ -1,5 +1,3 @@
-package torneo;
-
 import java.util.ArrayList;
 
 public class Equipo {
@@ -48,7 +46,7 @@ public class Equipo {
 
     @Override
     public String toString() {
-        return "torneo.Equipo{" +
+        return "Equipo{" +
                 "nombre='" + nombre +
         '}';
     }
