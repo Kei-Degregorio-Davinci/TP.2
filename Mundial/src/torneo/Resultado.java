@@ -1,3 +1,5 @@
+package torneo;
+
 public class Resultado {
     private int golesLocal;
     private int golesVisitante;
@@ -33,7 +35,7 @@ public class Resultado {
 
     @Override
     public String toString() {
-        return "Resultado{" +
+        return "torneo.Resultado{" +
                 "golesLocal=" + golesLocal +
                 ", golesVisitante=" + golesVisitante +
                 '}';

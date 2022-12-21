@@ -1,4 +1,7 @@
+package torneo;
+
 import java.util.Date;
+
 
 public class Partido {
     private Date fecha;
@@ -23,6 +26,24 @@ public class Partido {
 
     public Resultado getResultado() {
         return resultado;
+    }
+
+    public void setResultado(Resultado resultado){
+        this.resultado = resultado;
+        this.local.addPartidosJugados(this);
+        this.visitante.addPartidosJugados(this);
+
+        if(this.getResultado().ganoLocal()){
+            this.local.partidoGanado();
+        }
+        else if(this.getResultado().empate()){
+            this.local.partidoEmpatado();
+            this.visitante.partidoEmpatado();
+        }
+        else{
+            this.visitante.partidoGanado();
+        }
+
     }
 
     @Override

@@ -1,3 +1,5 @@
+package torneo;
+
 import java.util.ArrayList;
 
 public abstract class EtapaMundial {
@@ -13,6 +15,10 @@ public abstract class EtapaMundial {
 
     public String getDescripcionEtapa() {
         return descripcionEtapa;
+    }
+
+    public void setDescripcionEtapa(String descripcionEtapa) {
+        this.descripcionEtapa = descripcionEtapa;
     }
 
 
@@ -35,7 +41,7 @@ public abstract class EtapaMundial {
 
     @Override
     public String toString() {
-        return "EtapaMundial{" +
+        return "torneo.EtapaMundial{" +
                 "descripcionEtapa='" + descripcionEtapa + '\'' +
                 ", partidos=" + partidos +
                 ", equipoQueAvanza=" + equipoQueAvanza +

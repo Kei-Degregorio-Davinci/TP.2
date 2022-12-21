@@ -1,3 +1,5 @@
+package torneo;
+
 import java.util.ArrayList;
 
 public class Equipo {
@@ -46,10 +48,8 @@ public class Equipo {
 
     @Override
     public String toString() {
-        return "Equipo{" +
-                "nombre='" + nombre + '\'' +
-                ", partidosJugados=" + partidosJugados +
-                ", puntajeEtapaGrupos=" + puntajeEtapaGrupos +
-                '}';
+        return "torneo.Equipo{" +
+                "nombre='" + nombre +
+        '}';
     }
 }

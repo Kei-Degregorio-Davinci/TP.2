@@ -1,3 +1,5 @@
+package torneo;
+
 import java.util.ArrayList;
 
 public class Grupo extends EtapaMundial{
