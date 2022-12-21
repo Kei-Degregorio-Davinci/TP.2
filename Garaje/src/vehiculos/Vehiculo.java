@@ -7,8 +7,13 @@ public class Vehiculo {
     private boolean cambiarRueda;
     private double kilometraje;
     private Contacto datosDelDueño;
+    private Moto moto;
+    private Auto auto;
 
-    public Vehiculo(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje, Contacto datosDelDueño) {
+    public Vehiculo() {
+    }
+
+    public Vehiculo(String tipoDeVehiculo, int horaIngreso, int horaRetirada, boolean cambiarRueda, double kilometraje) {
         this.tipoDeVehiculo = tipoDeVehiculo;
         this.horaIngreso = horaIngreso;
         this.horaRetirada = horaRetirada;
@@ -17,8 +22,6 @@ public class Vehiculo {
 
     }
 
-    public Vehiculo(String moto, int horaIngreso, int horaRetirada, boolean cambiarRueda, int kilometraje) {
-    }
 
     public String getTipoDeVehiculo() {
         return tipoDeVehiculo;
@@ -76,7 +79,7 @@ public class Vehiculo {
                 ", horaRetirada=" + horaRetirada +
                 ", cambiarRueda=" + cambiarRueda +
                 ", kilometraje=" + kilometraje +
-                ", datosDelDueño=" + datosDelDueño +
+                 +
                 '}';
     }
 }

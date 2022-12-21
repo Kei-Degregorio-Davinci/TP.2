@@ -1,6 +1,8 @@
 import sistemaGarage.Garage;
 import torneo.*;
+import vehiculos.Auto;
 import vehiculos.Contacto;
+import vehiculos.Moto;
 import vehiculos.Vehiculo;
 import torneo.Resultado;
 
@@ -288,7 +290,69 @@ public class Main {
 
 
 
-        
+        //GARAGE
+
+        System.out.println("Garaje:");
+
+        Garage garage1= new Garage(8, 12, "Sarmiento 125", 100, 200,100);
+        Vehiculo v1 = new Vehiculo("Moto", 9, 10,true, 85);
+        Moto m1= new Moto("Honda", 25, "EDF 321");
+        Contacto c1 = new Contacto("Juan Cruz", "Fernandez", 123456788);
+
+        System.out.println("Hora de apertura:" + garage1.getHoraApertura());
+        System.out.println("Hora de cierre: " + garage1.getHoraCierre());
+        System.out.println("Direccion: " + garage1.getDireccion());
+        System.out.println("Capacidad Maxima: " + garage1.getCapacidadMaxima());
+        System.out.println("Cambio rueda de auto: $" + garage1.getPrecioCambioRuedaDeAuto());
+        System.out.println("Cambio rueda de moto: $" + garage1.getPrecioCambioRuedaDeMoto());
+
+        System.out.println("Nombre: " + c1.getNombre());
+        System.out.println("Apellido: " + c1.getApellido());
+        System.out.println("Numero de Celular: " + c1.getNumeroCelular());
+
+        System.out.println("Vehiculo ingresado: " + v1.getTipoDeVehiculo());
+        System.out.println("Hora que ingreso: " + v1.getHoraIngreso());
+        System.out.println("Hora que se retiró: " + v1.getHoraRetirada());
+        System.out.println("Cambio de ruedas: " + v1.isCambiarRueda());
+        System.out.println("Kilometrajes: " + v1.getKilometraje());
+
+        System.out.println("Marca de la moto: " + m1.getMarca());
+        System.out.println("Cilindrada:" + m1.getCilindrada());
+        System.out.println("Patente: " + m1.getPatente());
+
+        Garage garage2= new Garage(10,20,"Mitre 123", 200, 500, 800);
+        Vehiculo v2= new Vehiculo("Auto", 11, 13, false, 56);
+        Auto a1= new Auto("Peugeot", 4, "KGF 365");
+        Contacto c2= new Contacto("Alejo", "Molina", 1245784966);
+
+        System.out.println("Hora de apertura:" + garage2.getHoraApertura());
+        System.out.println("Hora de cierre: " + garage2.getHoraCierre());
+        System.out.println("Direccion: " + garage2.getDireccion());
+        System.out.println("Capacidad Maxima: " + garage2.getCapacidadMaxima());
+        System.out.println("Cambio rueda de auto: $" + garage2.getPrecioCambioRuedaDeAuto());
+        System.out.println("Cambio rueda de moto: $" + garage2.getPrecioCambioRuedaDeMoto());
+
+        System.out.println("Nombre: " + c2.getNombre());
+        System.out.println("Apellido: " + c2.getApellido());
+        System.out.println("Numero de Celular: " + c2.getNumeroCelular());
+
+        System.out.println("Vehiculo ingresado: " + v2.getTipoDeVehiculo());
+        System.out.println("Hora que ingreso: " + v2.getHoraIngreso());
+        System.out.println("Hora que se retiró: " + v2.getHoraRetirada());
+        System.out.println("Cambio de ruedas: " + v2.isCambiarRueda());
+        System.out.println("Kilometrajes: " + v2.getKilometraje());
+
+        System.out.println("Marca del auto: " + a1.getMarca());
+        System.out.println("Cantidad de puertas:" + a1.getNumeroDePuertas());
+        System.out.println("Patente: " + a1.getPatente());
+
+
+
+
+
+
+
+
 
 
     }

@@ -1,5 +1,7 @@
 package sistemaGarage;
 
+import vehiculos.Auto;
+import vehiculos.Moto;
 import vehiculos.Vehiculo;
 
 public class Garage {
@@ -98,6 +100,7 @@ public class Garage {
     public void setKilometrajeEnTotal(Vehiculo kilometrajeEnTotal) {
         this.kilometrajeEnTotal = kilometrajeEnTotal;
     }
+
 
     public Vehiculo getTotalVehiculosRecibidos() {
         return totalVehiculosRecibidos;
