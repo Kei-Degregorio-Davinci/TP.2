@@ -7,8 +7,7 @@ public class Vehiculo {
     private boolean cambiarRueda;
     private double kilometraje;
     private Contacto datosDelDueño;
-    private Moto moto;
-    private Auto auto;
+
 
     public Vehiculo() {
     }

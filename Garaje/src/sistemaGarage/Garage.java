@@ -1,7 +1,4 @@
 package sistemaGarage;
-
-import vehiculos.Auto;
-import vehiculos.Moto;
 import vehiculos.Vehiculo;
 
 public class Garage {
@@ -77,6 +74,7 @@ public class Garage {
         this.precioCambioRuedaDeAuto = precioCambioRuedaDeAuto;
     }
 
+
     public int getPrecioCambioRuedaDeMoto() {
         return PrecioCambioRuedaDeMoto;
     }
@@ -92,6 +90,7 @@ public class Garage {
     public void setPrecioTotalEnCambioDeRueda(Vehiculo precioTotalEnCambioDeRueda) {
         this.precioTotalEnCambioDeRueda = precioTotalEnCambioDeRueda;
     }
+
 
     public Vehiculo getKilometrajeEnTotal() {
         return kilometrajeEnTotal;

@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/Garaje/src/sistemaGarage/Garage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Garaje/src/sistemaGarage/Garage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Garaje/src/vehiculos/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Garaje/src/vehiculos/Auto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Garaje/src/vehiculos/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Garaje/src/vehiculos/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Garaje/src/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Garaje/src/vehiculos/Vehiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mundial.puml" beforeDir="false" afterPath="$PROJECT_DIR$/Mundial.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mundial/src/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mundial/src/torneo/Equipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mundial/src/EtapaMundial.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mundial/src/torneo/EtapaMundial.java" afterDir="false" />
@@ -104,7 +103,7 @@
       <workItem from="1670217497530" duration="942000" />
       <workItem from="1671302774648" duration="21000" />
       <workItem from="1671302903789" duration="110000" />
-      <workItem from="1671303206373" duration="15052000" />
+      <workItem from="1671303206373" duration="16242000" />
     </task>
     <servers />
   </component>

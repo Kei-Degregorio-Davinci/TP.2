@@ -320,6 +320,7 @@ public class Main {
         System.out.println("Cilindrada:" + m1.getCilindrada());
         System.out.println("Patente: " + m1.getPatente());
 
+
         Garage garage2= new Garage(10,20,"Mitre 123", 200, 500, 800);
         Vehiculo v2= new Vehiculo("Auto", 11, 13, false, 56);
         Auto a1= new Auto("Peugeot", 4, "KGF 365");
@@ -345,6 +346,10 @@ public class Main {
         System.out.println("Marca del auto: " + a1.getMarca());
         System.out.println("Cantidad de puertas:" + a1.getNumeroDePuertas());
         System.out.println("Patente: " + a1.getPatente());
+
+      
+
+
 
 
 
